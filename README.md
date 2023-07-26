@@ -1,2 +1,4 @@
 # odin-recipes
-A recipe webpage
+
+My first project in TOP.
+Creating a recipe webpage.
