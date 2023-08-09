@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    background: linear-gradient(to right, rgb(21, 92, 48), rgb(90, 201, 158));
+    font-size: 16px;
+    color: white;
+    font-family: sans-serif;
+}
+nav{
+    width: 85%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto 50px;
+    align-items: baseline;
+}
+nav > h1{
+    font-size: 2.5rem;
+
+    cursor: pointer;
+    font-weight: 850px;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    font-size: 1.8rem;
+}
+nav ul li{
+    margin-left: 25px;
+    position: relative;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+nav ul li::after{
+    content: '';
+    background-color: white;
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    left: 0;
+    bottom: -5px;
+    transition: all 300ms ease;
+}
+nav ul li:hover::after{
+    width: 100%;
+}
+/* ------- MAIN SECTION ---------- */
+main{
+    width: 85%;
+    display: flex;
+    margin: 100px auto 0;
+    /* gap: 45rem; */
+    justify-content: space-between;
+}
+main .left h3{
+    font-size: 1.7rem;
+}
+main .left .second{
+    font-size: 1.2rem;
+    font-style: italic;
+}
+main .left ul{
+    list-style: none;
+}
+main .left ul{
+    margin: 1.5rem 0 0 5rem;
+}
+main .left ul li{
+    color: #f4f4f1;
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+    transition: all 300ms ease;
+}
+main .left ul li a{
+    background-color: rgba(255, 250, 239, 0.15);
+    padding: 5px;
+    color: #f4f4f1;
+    border-radius: 5px;
+}
+main .left ul li:hover{
+    transform: translateX(10px);
+}
+main img{
+    width: 400px;
+}
